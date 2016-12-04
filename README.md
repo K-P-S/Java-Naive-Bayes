@@ -1,2 +1,2 @@
-# Priority Calandar
-EECS 302 Final Project
+# Priority Calander
+EECS 233 Final Project
