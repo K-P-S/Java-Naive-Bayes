@@ -1,1 +1,37 @@
+public static void main(String[] args)
+{
+File file = new File("/path/to/my/file.txt");
+Scanner input = new Scanner(file);
 
+while(input.hasNext()) 
+{
+    String nextLine = input.nextLine();
+    parse(nextLine);
+}
+input.close();
+
+freqWords(file);
+
+applyBayes(freq);
+}
+
+public static void(String nextLine)
+{
+String[] words = nextLine.split(" ");
+   ArrayList<String> wordsList = new ArrayList<String>();
+   Set<String> stopWordsSet = new HashSet<String>();
+
+   //change to add any word of <5 characters
+   stopWordsSet.add("I");
+   stopWordsSet.add("THIS");
+   stopWordsSet.add("AND");
+   stopWordsSet.add("THERE'S");
+   stopWordsSet.add()
+
+   for(String word : words)
+   {
+       String wordCompare = word.toUpperCase();
+       if(!stopWordsSet.contains(wordCompare))
+           wordsList.add(word);
+   }
+ }
